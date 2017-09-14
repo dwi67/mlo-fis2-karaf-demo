@@ -1,0 +1,1 @@
+Camel FIS2 compatible Karaf application to show the features of camel in openshift.io and Fabric8 v4
