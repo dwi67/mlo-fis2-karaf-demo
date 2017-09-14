@@ -14,7 +14,7 @@
 
     <!-- configure the versions you want to use here -->
     <fabric8.version>2.3.5</fabric8.version>
-    <karaf.plugin.version>4.0.8.redhat-000029</karaf.plugin.version>
+    <karaf.plugin.version>4.0.8</karaf.plugin.version>
 
     <!-- maven plugin versions -->
     <maven-compiler-plugin.version>3.3</maven-compiler-plugin.version>
