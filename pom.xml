@@ -25,6 +25,17 @@
     <fabric8.maven.plugin.version>3.5.28</fabric8.maven.plugin.version>
   </properties>
 
+  <repositories>
+    <repository>
+      <id>jboss-ga</id>
+      <url>https://maven.repository.redhat.com/ga/</url>
+    </repository>
+    <repository>
+      <id>jboss-early-access</id>
+      <url>https://maven.repository.redhat.com/earlyaccess/all/</url>
+    </repository>
+  </repositories>
+
   <dependencyManagement>
     <dependencies>
       <!-- import fabric8 platform bom first -->
@@ -38,19 +49,8 @@
     </dependencies>
   </dependencyManagement>
 
-    <repositories>
-        <repository>
-            <id>jboss-ga</id>
-            <url>https://maven.repository.redhat.com/ga/</url>
-        </repository>
-        <repository>
-            <id>jboss-early-access</id>
-            <url>https://maven.repository.redhat.com/earlyaccess/all/</url>
-        </repository>
-    </repositories>
 
   <dependencies>
-
     <dependency>
       <groupId>org.apache.camel</groupId>
       <artifactId>camel-core</artifactId>
