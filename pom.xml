@@ -38,6 +38,17 @@
     </dependencies>
   </dependencyManagement>
 
+    <repositories>
+        <repository>
+            <id>jboss-ga</id>
+            <url>https://maven.repository.redhat.com/ga/</url>
+        </repository>
+        <repository>
+            <id>jboss-early-access</id>
+            <url>https://maven.repository.redhat.com/earlyaccess/all/</url>
+        </repository>
+    </repositories>
+
   <dependencies>
 
     <dependency>
