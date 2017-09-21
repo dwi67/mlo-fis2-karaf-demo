@@ -44,6 +44,7 @@ mavenNode {
     container(name: 'maven') {
 
       sh "mvn clean --settings ./configuration/settings.xml"
+      sh "mvn maven-help-plugin:2.2:effective-settings"
 
       stage('Build Release'){
         mavenCanaryRelease {
