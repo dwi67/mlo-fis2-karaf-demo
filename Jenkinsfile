@@ -34,7 +34,7 @@ def deploy = false
 mavenNode {
   checkout scm
 
-  sh 'mvn --version'
+  sh "mvn --version"
 
   if (utils.isCI()){
 
