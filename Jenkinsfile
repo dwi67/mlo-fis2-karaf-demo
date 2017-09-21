@@ -44,6 +44,7 @@ mavenNode {
     container(name: 'maven') {
 
       sh "mvn --version"
+      sh "mvn help:effective-settings"
 
       stage('Build Release'){
         mavenCanaryRelease {
