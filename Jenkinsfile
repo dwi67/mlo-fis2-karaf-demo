@@ -33,10 +33,9 @@ def stashName = ""
 def deploy = false
 mavenNode {
   checkout scm
-  sh 'env > env.txt'
-  for (String i : readFile('env.txt').split("\r?\n")) {
-    println i
-  }
+
+  sh 'mvn --version'
+
   if (utils.isCI()){
 
     mavenCI{}
