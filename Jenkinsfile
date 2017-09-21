@@ -44,7 +44,7 @@ mavenNode {
     container(name: 'maven') {
 
       sh "mvn --version"
-      sh "mvn help:effective-settings"
+      sh "mvn help:effective-settings -P openshift"
 
       stage('Build Release'){
         mavenCanaryRelease {
