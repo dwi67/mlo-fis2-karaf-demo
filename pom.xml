@@ -13,8 +13,8 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
     <!-- configure the versions you want to use here -->
-    <fabric8.version>2.2.170.redhat-000013</fabric8.version>
-    <karaf.plugin.version>4.0.8.redhat-000029</karaf.plugin.version>
+    <fabric8.version>3.5.28</fabric8.version>
+    <karaf.plugin.version>4.0.9</karaf.plugin.version>
 
     <!-- maven plugin versions -->
     <maven-compiler-plugin.version>3.3</maven-compiler-plugin.version>
