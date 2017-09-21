@@ -34,8 +34,6 @@ def deploy = false
 mavenNode {
   checkout scm
 
-  sh "mvn --version"
-
   if (utils.isCI()){
 
     mavenCI{}
@@ -44,6 +42,8 @@ mavenNode {
     deploy = true
     echo 'NOTE: running pipelines for the first time will take longer as build and base docker images are pulled onto the node'
     container(name: 'maven') {
+
+      sh "mvn --version"
 
       stage('Build Release'){
         mavenCanaryRelease {
