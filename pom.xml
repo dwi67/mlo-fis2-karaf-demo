@@ -13,8 +13,8 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
     <!-- configure the versions you want to use here -->
-    <fabric8.version>2.3.5</fabric8.version>
-    <karaf.plugin.version>4.0.8</karaf.plugin.version>
+    <fabric8.version>2.2.170.redhat-000013</fabric8.version>
+    <karaf.plugin.version>4.0.9</karaf.plugin.version>
 
     <!-- maven plugin versions -->
     <maven-compiler-plugin.version>3.3</maven-compiler-plugin.version>
@@ -73,6 +73,11 @@
       <artifactId>fabric8-karaf-features</artifactId>
       <classifier>features</classifier>
       <type>xml</type>
+    </dependency>
+
+    <dependency>
+      <groupId>io.fabric8</groupId>
+      <artifactId>fabric8-karaf-core</artifactId>
     </dependency>
 
     <!-- testing -->
@@ -212,7 +217,8 @@
           </execution>
         </executions>
       </plugin>
-  -->
+
+-->
 
     </plugins>
   </build>
