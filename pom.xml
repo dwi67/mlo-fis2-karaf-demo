@@ -20,7 +20,7 @@
     <maven-compiler-plugin.version>3.3</maven-compiler-plugin.version>
     <maven-surefire-plugin.version>2.18.1</maven-surefire-plugin.version>
     <maven-bundle-plugin.version>3.3.0</maven-bundle-plugin.version>
-    <maven-resources-plugin.version>2.7</maven-resources-plugin.version>
+    <maven-resources-plugin.version>3.0.2</maven-resources-plugin.version>
     <maven-install-plugin.version>2.5.2</maven-install-plugin.version>
     <fabric8.maven.plugin.version>3.5.28</fabric8.maven.plugin.version>
   </properties>
@@ -81,6 +81,7 @@
       <artifactId>arquillian-junit-container</artifactId>
       <scope>test</scope>
     </dependency>
+
     <dependency>
       <groupId>io.fabric8</groupId>
       <artifactId>fabric8-arquillian</artifactId>
@@ -211,7 +212,8 @@
           </execution>
         </executions>
       </plugin>
--->
+  -->
+
     </plugins>
   </build>
 
