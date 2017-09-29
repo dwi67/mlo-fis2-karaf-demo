@@ -25,105 +25,86 @@
     <fabric8.maven.plugin.version>3.1.80.redhat-000013</fabric8.maven.plugin.version>
   </properties>
 
-      <repositories>
+  <repositories>
+    <repository>
+      <id>maven.central</id>
+      <name>Maven Central</name>
+      <url>https://repo1.maven.org/maven2</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <releases>
+        <enabled>true</enabled>
+        <updatePolicy>never</updatePolicy>
+      </releases>
+    </repository>
+    <repository>
+      <id>redhat.ga</id>
+      <name>Red Hat General Availability Repository</name>
+      <url>https://maven.repository.redhat.com/ga</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <releases>
+        <enabled>true</enabled>
+        <updatePolicy>never</updatePolicy>
+      </releases>
+    </repository>
+    <repository>
+      <id>redhat.ea</id>
+      <name>Red Hat Early Access Repository</name>
+      <url>https://maven.repository.redhat.com/earlyaccess/all</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <releases>
+        <enabled>true</enabled>
+        <updatePolicy>never</updatePolicy>
+      </releases>
+    </repository>
+  </repositories>
 
-        <repository>
-          <id>maven.central</id>
-          <name>Maven Central</name>
-          <url>https://repo1.maven.org/maven2</url>
-          <snapshots>
-            <enabled>false</enabled>
-          </snapshots>
-          <releases>
-            <enabled>true</enabled>
-            <updatePolicy>never</updatePolicy>
-          </releases>
-        </repository>
-
-
-        <repository>
-          <id>redhat.ga</id>
-          <name>Red Hat General Availability Repository</name>
-          <url>https://maven.repository.redhat.com/ga</url>
-          <snapshots>
-            <enabled>false</enabled>
-          </snapshots>
-          <releases>
-            <enabled>true</enabled>
-            <updatePolicy>never</updatePolicy>
-          </releases>
-        </repository>
-
-
-        <repository>
-          <id>redhat.ea</id>
-          <name>Red Hat Early Access Repository</name>
-          <url>https://maven.repository.redhat.com/earlyaccess/all</url>
-          <snapshots>
-            <enabled>false</enabled>
-          </snapshots>
-          <releases>
-            <enabled>true</enabled>
-            <updatePolicy>never</updatePolicy>
-          </releases>
-        </repository>
-
-
-
-
-      </repositories>
-
-      <pluginRepositories>
-
-        <pluginRepository>
-          <id>maven.central</id>
-          <name>Maven Central</name>
-          <url>https://repo1.maven.org/maven2</url>
-          <snapshots>
-            <enabled>false</enabled>
-          </snapshots>
-          <releases>
-            <enabled>true</enabled>
-            <updatePolicy>never</updatePolicy>
-          </releases>
-        </pluginRepository>
-
-
-        <pluginRepository>
-          <id>redhat.ga</id>
-          <name>Red Hat General Availability Repository</name>
-          <url>https://maven.repository.redhat.com/ga</url>
-          <snapshots>
-            <enabled>false</enabled>
-          </snapshots>
-          <releases>
-            <enabled>true</enabled>
-            <updatePolicy>never</updatePolicy>
-          </releases>
-        </pluginRepository>
-
-
-        <pluginRepository>
-          <id>redhat.ea</id>
-          <name>Red Hat Early Access Repository</name>
-          <url>https://maven.repository.redhat.com/earlyaccess/all</url>
-          <snapshots>
-            <enabled>false</enabled>
-          </snapshots>
-          <releases>
-            <enabled>true</enabled>
-            <updatePolicy>never</updatePolicy>
-          </releases>
-        </pluginRepository>
-
-
-
-
-      </pluginRepositories>
+  <pluginRepositories>
+    <pluginRepository>
+      <id>maven.central</id>
+      <name>Maven Central</name>
+      <url>https://repo1.maven.org/maven2</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <releases>
+        <enabled>true</enabled>
+        <updatePolicy>never</updatePolicy>
+      </releases>
+    </pluginRepository>
+    <pluginRepository>
+      <id>redhat.ga</id>
+      <name>Red Hat General Availability Repository</name>
+      <url>https://maven.repository.redhat.com/ga</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <releases>
+        <enabled>true</enabled>
+        <updatePolicy>never</updatePolicy>
+      </releases>
+    </pluginRepository>
+    <pluginRepository>
+      <id>redhat.ea</id>
+      <name>Red Hat Early Access Repository</name>
+      <url>https://maven.repository.redhat.com/earlyaccess/all</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <releases>
+        <enabled>true</enabled>
+        <updatePolicy>never</updatePolicy>
+      </releases>
+    </pluginRepository>
+  </pluginRepositories>
 
 
   <dependencyManagement>
-
     <dependencies>
       <!-- import fabric8 platform bom first -->
       <dependency>
@@ -134,12 +115,9 @@
         <scope>import</scope>
       </dependency>
     </dependencies>
-
   </dependencyManagement>
 
-
   <dependencies>
-
     <dependency>
       <groupId>org.apache.camel</groupId>
       <artifactId>camel-core</artifactId>
@@ -189,7 +167,6 @@
       <artifactId>fabric8-arquillian</artifactId>
       <scope>test</scope>
     </dependency>
-
   </dependencies>
 
   <build>
@@ -328,7 +305,7 @@
           <plugin>
             <groupId>io.fabric8</groupId>
             <artifactId>fabric8-maven-plugin</artifactId>
-            <version>3.1.80.redhat-000013</version>
+            <version>3.5.28</version>
             <executions>
               <execution>
                 <id>fmp</id>
