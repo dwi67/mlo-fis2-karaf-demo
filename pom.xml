@@ -22,7 +22,7 @@
     <maven-bundle-plugin.version>3.3.0</maven-bundle-plugin.version>
     <maven-resources-plugin.version>3.0.2</maven-resources-plugin.version>
     <maven-install-plugin.version>2.5.2</maven-install-plugin.version>
-    <fabric8.maven.plugin.version>3.1.80.redhat-000013</fabric8.maven.plugin.version>
+    <fabric8.maven.plugin.version>3.5.28</fabric8.maven.plugin.version>
   </properties>
 
   <repositories>
@@ -269,7 +269,7 @@
         </configuration>
       </plugin>
 
-      <!-- 3. create docker image
+      <!-- 3. create docker image -->
       <plugin>
         <groupId>io.fabric8</groupId>
         <artifactId>fabric8-maven-plugin</artifactId>
@@ -292,7 +292,7 @@
         </executions>
       </plugin>
 
--->
+
 
     </plugins>
   </build>
