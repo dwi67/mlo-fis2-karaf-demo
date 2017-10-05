@@ -311,10 +311,16 @@
             <version>3.5.28</version>
             <executions>
               <execution>
-                <id>fmp</id>
-                <phase>package</phase>
+                <id>generate-resource</id>
+                <phase>generate-resources</phase>
                 <goals>
                   <goal>resource</goal>
+                </goals>
+              </execution>
+              <execution>
+                <id>build-image</id>
+                <phase>install</phase>
+                <goals>
                   <goal>build</goal>
                 </goals>
               </execution>
