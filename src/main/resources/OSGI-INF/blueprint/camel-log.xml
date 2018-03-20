@@ -43,7 +43,7 @@
         <route id="log-route">
             <from id="route-timer" uri="timer:foo?period=5s"/>
             <setBody id="route-set-body">
-                <simple>Hello from Camel from Medidata</simple>
+                <simple>Hello from Camel from adesso</simple>
             </setBody>
             <log id="route-log" message=">>> ${body} : ${id}"/>
         </route>
